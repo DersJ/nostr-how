@@ -14,30 +14,30 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="mx-auto text-center mb-4" style="width: 500px">
-            <h2>Nostr in the Browser (Desktop)</h2>
+            <h2>Nostr in the browser (desktop)</h2>
           </div>
 
           <small>est. time to complete: 5 minutes</small>
           <h4>0. Understanding keys</h4>
-          <p>
+          <p class="ms-4">
             Each Nostr account is based on a private/public keypair. Your public
-            key is your username and your private key is your password. Unlike a
-            custodial service, you are responsible for keeping your private key
-            safe, and it cannot be reset if lost. Therefore, we will use Alby, a
-            bitcoin lightning wallet extension to manage your private key.
+            key is your username and your private key is your password. You are
+            responsible for keeping your private key safe, and it cannot be
+            reset if lost.
+          </p>
+          <p class="ms-4">
+            While you can sign into a client by pasting in your private key,
+            that method is not recommended - it's tedious and insecure. Instead,
+            we will use a crypto wallet, which is a piece of software
+            specifically designed to manage your private keys.
+          </p>
+          <p class="ms-4">
+            The Alby extension & lightning wallet has built in support for
+            Nostr. It's a great option for new users, but you can also add your
+            existing Nostr private key.
           </p>
 
           <h4>1. Install Alby Extension</h4>
-          <ul>
-            <li>
-              Best practice is to use a browser extension to manage your private
-              key
-            </li>
-            <li>
-              The Alby lightning wallet extension has built in support for Nostr
-              (available for Chrome and Firefox)
-            </li>
-          </ul>
           <p class="ms-4">
             Visit <a href="https://getalby.com/">getalby.com</a> and click the
             "Install Alby" button. Install the extension to your browser.
@@ -50,7 +50,7 @@
           </p>
 
           <h4>2. Generate your private key</h4>
-          <p>
+          <p class="ms-4">
             Once alby is installed and connected to a lightning wallet, navigate
             to the alby settings page. Scroll to the Nostr sectoin and click the
             "generate" button in the private key field. This will generate a
@@ -59,13 +59,13 @@
           </p>
 
           <h4>3. Log into Nostr on a client</h4>
-          <p>
+          <p class="ms-4">
             Now that you have a private key, you can log into nostr. But
             remember, Nostr is only a protocol, not an application, so you will
             need to use a Nostr client to access the network. For this guide
             we'll use Astral, a simple twitter-like web client.
           </p>
-          <ol>
+          <ol class="ms-4">
             <li>Navigate to <a href="https://astral.ninja">astral.ninja</a></li>
             <li>
               In the login popup, click the "USE PUBLIC KEY FROM EXTENSION"
@@ -73,14 +73,14 @@
             </li>
             <li>Authorize key usage in the alby extension popup.</li>
           </ol>
-          <p>
+          <p class="ms-4">
             You are logged in! It may take a few moments for content to start
             loading. From year you can follow friends (by searching for their
             pubkey), view different feeds, and post content.
           </p>
 
           <h4>4. Find friends</h4>
-          <ul>
+          <ul class="ms-4">
             <li>
               If you know someone on nostr, find their profile by searching
               thier public key.
