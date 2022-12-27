@@ -1,0 +1,2 @@
+# nostr-how
+nostr.how
