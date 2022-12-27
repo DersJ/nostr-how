@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nostr.how</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="mx-auto text-center mb-4" style="width: 500px">
+            <h2>Nostr in the Browser (Desktop)</h2>
+          </div>
+
+          <small>est. time to complete: 5 minutes</small>
+          <h4>0. Understanding keys</h4>
+          <p>
+            Each Nostr account is based on a private/public keypair. Your public
+            key is your username and your private key is your password. Unlike a
+            custodial service, you are responsible for keeping your private key
+            safe, and it cannot be reset if lost. Therefore, we will use Alby, a
+            bitcoin lightning wallet extension to manage your private key.
+          </p>
+
+          <h4>1. Install Alby Extension</h4>
+          <ul>
+            <li>
+              Best practice is to use a browser extension to manage your private
+              key
+            </li>
+            <li>
+              The Alby lightning wallet extension has built in support for Nostr
+              (available for Chrome and Firefox)
+            </li>
+          </ul>
+          <p class="ms-4">
+            Visit <a href="https://getalby.com/">getalby.com</a> and click the
+            "Install Alby" button. Install the extension to your browser.
+          </p>
+          <p class="ms-4">
+            During alby setup, you will be prompted to connect to a lightning
+            wallet. If you do not have a wallet, continue with the alby wallet
+            option and sign up for an alby account. If you already have a
+            lightning wallet, you can connect to it.
+          </p>
+
+          <h4>2. Generate your private key</h4>
+          <p>
+            Once alby is installed and connected to a lightning wallet, navigate
+            to the alby settings page. Scroll to the Nostr sectoin and click the
+            "generate" button in the private key field. This will generate a
+            private key and save it to your alby wallet. You can now use this
+            private key to log into nostr.
+          </p>
+
+          <h4>3. Log into Nostr on a client</h4>
+          <p>
+            Now that you have a private key, you can log into nostr. But
+            remember, Nostr is only a protocol, not an application, so you will
+            need to use a Nostr client to access the network. For this guide
+            we'll use Astral, a simple twitter-like web client.
+          </p>
+          <ol>
+            <li>Navigate to <a href="https://astral.ninja">astral.ninja</a></li>
+            <li>
+              In the login popup, click the "USE PUBLIC KEY FROM EXTENSION"
+              button.
+            </li>
+            <li>Authorize key usage in the alby extension popup.</li>
+          </ol>
+          <p>
+            You are logged in! It may take a few moments for content to start
+            loading. From year you can follow friends (by searching for their
+            pubkey), view different feeds, and post content.
+          </p>
+
+          <h4>4. Find friends</h4>
+          <ul>
+            <li>
+              If you know someone on nostr, find their profile by searching
+              thier public key.
+            </li>
+            <li>
+              Many Twitter users are tweeting thier Nostr pubkeys with the
+              hashtag
+              <a href="https://twitter.com/search?q=%23nostr&src=typed_query"
+                >#nostr</a
+              >
+            </li>
+            <li>
+              <a href="nostr.directory">nostr.directory</a> is a database
+              mapping twitter users to their nostr pubkeys
+            </li>
+          </ul>
+          <p></p>
+          <p></p>
+
+          <a class="btn btn-secondary my-4" href="/">Back</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>

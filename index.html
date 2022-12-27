@@ -1,9 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Nostr.how</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <p>Hello world!</p>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="mb-4">
+            <h1 class="display-1 fw-bold">Nostr.how</h1>
+            <p class="fs-4">
+              What, why, and how?
+            </p>
+          </div>
+          <h3>What is Nostr</h3>
+          <p>From the <a href="https://github.com/nostr-protocol/nostr" target="_blank">nostr-protocol GitHub repo</a>:</p>
+          <p>[Nostr is] <i>the simplest open protocol that is able to create a censorship-resistant global "social" network once and for all.</i></p>
+          <p>Like HTTP or TCP-IP, Nostr is a protocol — not an application or service.</p>
+
+          <h3>Why Nostr</h3>
+          <p>Social Networking is a crowded space. Each existing option has <span class="text-success">benefits</span> and <span class="text-danger">costs</span>:</p>
+          <ul>
+            <li>Centralized services (Twitter, Facebook, Truth Social)
+              <ul>
+                <li><span class="text-success">Ease of use</span> for <span class="text-danger">ads and censorship</span></li>
+              </ul>
+            </li>
+            <li>Decentralized or p2p social networks (Mastadon, SSB)
+              <ul>
+                <li><span class="text-success">Free speech</span> for <span class="text-danger">complicated setup and expensive servers</span></li>
+              </ul>
+            </li>
+          </ul>
+
+          <p>
+            Click
+            <a href="https://github.com/nostr-protocol/nostr#this-is-needed-because-other-solutions-are-broken" target="_blank">
+            here</a>
+            for more details on the shortcomings of existing solutions.
+          </p>
+
+
+          <h3>How to use Nostr</h3>
+          <p>
+            This site is a quickstart guide to Nostr for Twitter users. On Nostr clients, you will find 
+            familiar functionality, such as following, posting, reposting, and replying.
+          </p>
+          <p><i>Disclaimer: There are limitless ways to use nostr</i></p>
+          <p>
+            To start, pick which platform you want to use:
+          </p>
+          <a class="btn btn-primary" href="guide/web/desktop/01.html">Browser - Desktop</a>
+          <a class="btn btn-outline-secondary disabled" href="#" disabled>Broswer - Mobile (coming soon)</a>
+          <a class="btn btn-outline-secondary disabled" href="#" disabled>iOS app (coming soon)</a>
+
+          <div class="mt-4 float-end">
+            <p>Created by Anders Juengst</p>
+          </div>
+    </div>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </html>
