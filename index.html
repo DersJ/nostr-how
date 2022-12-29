@@ -1,90 +1,109 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Nostr.how</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-  </head>
-  <body>
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="mb-4">
-            <h1 class="display-1 fw-bold">Nostr.how</h1>
-            <p class="fs-4">
-              What, why, and how?
-            </p>
-          </div>
-          <h3>What is Nostr</h3>
-          <p>From the <a href="https://github.com/nostr-protocol/nostr" target="_blank">nostr-protocol GitHub</a>:</p>
-          <p><i>The simplest open protocol that is able to create a censorship-resistant global "social" network once and for all.</i></p>
-          <p>Like HTTP or TCP-IP, Nostr is a protocol — not an application or service.</p>
+---
+layout: base
+title: Nostr.how
+---
 
-          <h3>Why Nostr</h3>
-          <p>Social Networking is a crowded space. Each existing option has <span class="text-success">benefits</span> and <span class="text-danger">costs</span>:</p>
-          <ul>
-            <li>Centralized services (Twitter, Facebook, Truth Social)
-              <ul>
-                <li><span class="text-success">Ease of use</span> for <span class="text-danger">ads and censorship</span></li>
-              </ul>
-            </li>
-            <li>Decentralized or p2p social networks (Mastadon, SSB)
-              <ul>
-                <li><span class="text-success">Free speech</span> for <span class="text-danger">complicated setup and expensive servers</span></li>
-              </ul>
-            </li>
-          </ul>
+<div class="mb-4">
+  <h1 class="display-1 fw-bold">Nostr.how</h1>
+  <p class="fs-4">What, why, and how?</p>
+</div>
+<h3>What is Nostr</h3>
+<p>
+  From the
+  <a href="https://github.com/nostr-protocol/nostr" target="_blank"
+    >nostr-protocol GitHub</a
+  >:
+</p>
+<p>
+  <i
+    >The simplest open protocol that is able to create a censorship-resistant
+    global "social" network once and for all.</i
+  >
+</p>
+<p>Like HTTP or TCP-IP, Nostr is a protocol — not an application or service.</p>
 
-          <p>
-            Click
-            <a href="https://github.com/nostr-protocol/nostr#this-is-needed-because-other-solutions-are-broken" target="_blank">
-            here</a>
-            for more details on the shortcomings of existing solutions.
-          </p>
+<h3>Why Nostr</h3>
+<p>
+  Social Networking is a crowded space. Each existing option has
+  <span class="text-success">benefits</span> and
+  <span class="text-danger">costs</span>:
+</p>
+<ul>
+  <li>
+    Centralized services (Twitter, Facebook, Truth Social)
+    <ul>
+      <li>
+        <span class="text-success">Ease of use</span> for
+        <span class="text-danger">ads and censorship</span>
+      </li>
+    </ul>
+  </li>
+  <li>
+    Decentralized or p2p social networks (Mastadon, SSB)
+    <ul>
+      <li>
+        <span class="text-success">Free speech</span> for
+        <span class="text-danger">complicated setup and expensive servers</span>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-          <p>The nostr protocol enables creation of decentralized and reliable social networks.</p>
+<p>
+  Click
+  <a
+    href="https://github.com/nostr-protocol/nostr#this-is-needed-because-other-solutions-are-broken"
+    target="_blank"
+  >
+    here</a
+  >
+  for more details on the shortcomings of existing solutions.
+</p>
 
+<p>
+  The nostr protocol enables creation of decentralized and reliable social
+  networks.
+</p>
 
-          <h3>How</h3>
-          <p>
-            This site is a quick-start guide to Nostr for Twitter users. Nostr implements 
-            familiar functionality, such as following, posting, reposting, and replying.
-          </p>
+<h3>How</h3>
+<p>
+  This site is a quick-start guide to Nostr for Twitter users. Nostr implements
+  familiar functionality, such as following, posting, reposting, and replying.
+</p>
 
-          <h4>Access guides</h4>
-          <p>
-            Platform specific guides on Nostr access:
-          </p>
-          <div class="mb-4">
-            <a class="btn btn-primary" href="guide/web/desktop/01.html">Desktop Browser</a>
-            <a class="btn btn-outline-secondary disabled" href="#" disabled>Mobile Browser (coming soon)</a>
-            <a class="btn btn-outline-secondary disabled" href="#" disabled>iOS app (coming soon)</a>
-          </div>
+<h4>Access guides</h4>
+<p>Platform specific guides on Nostr access:</p>
+<div class="mb-4">
+  <a class="btn btn-primary" href="guide/web/desktop/01.html"
+    >Desktop Browser</a
+  >
+  <a class="btn btn-outline-secondary disabled" href="#" disabled
+    >Mobile Browser (coming soon)</a
+  >
+  <a class="btn btn-outline-secondary disabled" href="#" disabled
+    >iOS app (coming soon)</a
+  >
+</div>
 
-          <h4>Managing identity</h4>
-          <p><i>coming soon...</i></p>
+<h4>Managing identity</h4>
+<p><i>coming soon...</i></p>
 
-          <h4>More</h4>
-          <p>Check out <a href="https://www.nostr.net/">nostr.net</a> for more Nostr resources!</p>
-          <div class="mt-4 float-end">
-            <p>
-              created by <a target="_blank" href="https://astral.ninja/npub16r4pcdqwhajxfqy7jx360egnx72vtyq2vepyx3pxwtl2t8yymsmsvaef30">anders@nostr.how</a>
-              | <a target="_blank" href="https://github.com/DersJ/nostr-how"><img src="github-mark.svg" width="20" height="20"></img></a>
-            </p>
-          </div>
-    </div>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
-</html>
+<h4>More</h4>
+<p>
+  Check out <a href="https://www.nostr.net/">nostr.net</a> for more Nostr
+  resources!
+</p>
+<div class="mt-4 float-end">
+  <p>
+    created by
+    <a
+      target="_blank"
+      href="https://astral.ninja/npub16r4pcdqwhajxfqy7jx360egnx72vtyq2vepyx3pxwtl2t8yymsmsvaef30"
+      >anders@nostr.how</a
+    >
+    |
+    <a target="_blank" href="https://github.com/DersJ/nostr-how"
+      ><img src="github-mark.svg" width="20" height="20"
+    /></a>
+  </p>
+</div>
