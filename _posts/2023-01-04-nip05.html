@@ -1,0 +1,58 @@
+---
+layout: base
+title: Nostr on Desktop
+permalink: /guides/nip05
+---
+
+<div class="mx-auto text-center mb-4" style="width: 500px">
+  <h2>NIP-05 Verification Guide</h2>
+  <div></div>
+  <small></small>
+</div>
+
+<h2>What is a NIP</h2>
+<p>
+  NIPs (Nostr Implementation Possibilities) document what MUST, what SHOULD and
+  what MAY be implemented by Nostr-compatible relay and client software. See a
+  complete list of nips
+  <a href="https://github.com/nostr-protocol/nips">here</a>.
+</p>
+
+<h2>NIP-05</h2>
+<p>
+  NIP-05 enables a nostr user to map their public key to a DNS-based internet
+  identifier. This allows a nostr user to be identified by a human-readable
+  name, instead of a long, hard-to-remember public key. This is useful for a
+  number of reasons, including the ability to easily share your identity with
+  others, and the ability to use a human-readable name in place of a public key
+  in a client.
+</p>
+
+<p>
+  As explained in the
+  <a href="https://github.com/nostr-protocol/nips/blob/master/05.md"
+    >NIP-05 spec</a
+  >, nostr clients will look for a <code>/.well-known/nostr.json</code> file at
+  the root of the specified domain. This file must contain the nostr public key
+  for the specified user.
+</p>
+
+<h2>How to set up a NIP-05 identifier</h2>
+
+<h3>Option 1: Host a nostr.json file on your own domain</h3>
+<p>
+  If you already own a domain/website this is a good free option. You can add a
+  .well-known/nostr.json file with your public key in a JSON object of the
+  format
+  <code>{ "names": { "NOSTR_NAME": "NOSTR_PUBKEY" }</code>. Make sure to serve
+  this file with the <code>Access-Control-Allow-Origin</code> header set to
+  <code>*</code>.
+</p>
+
+<h3>Option 1: Use an existing NIP-05 service</h3>
+<p>
+  If you don't want to set up your own nostr.json, you can take advantage of a
+  NIP-05 service, such as <a href="https://nostrplebs.com/">nostrplebs.com</a>.
+  In exchange for a handlefull of sats, you can add your public key to thier
+  nostr.json.
+</p>
