@@ -11,7 +11,7 @@ permalink: /guides/nip05
 </div>
 
 <h2>What is a NIP</h2>
-<p>
+<p class="mb-4">
   NIPs (Nostr Implementation Possibilities) document what MUST, what SHOULD and
   what MAY be implemented by Nostr-compatible relay and client software. See a
   complete list of nips
@@ -22,26 +22,31 @@ permalink: /guides/nip05
 <p>
   NIP-05 enables a nostr user to map their public key to a DNS-based internet
   identifier. This allows a nostr user to be identified by a human-readable
-  name, instead of a long, hard-to-remember public key. This is useful for a
-  number of reasons, including the ability to easily share your identity with
-  others, and the ability to use a human-readable name in place of a public key
-  in a client.
+  name, instead of a long, hard-to-remember public key. This enables nostr users
+  to verify their identify and easily share their identity with others.
 </p>
 
 <p>
-  As explained in the
+  To utilize NIP-05, nostr users add a nip05 url to their profile (most clients
+  have support for this). NIP-05 urls look like
+  <code>bob@example.com</code>. The name before the @ symbol must match the
+  value of the name field in your nostr profile.
+</p>
+<p class="mb-4">
+  When clients see a nip05 url, they will look for a
+  <code>/.well-known/nostr.json</code> file at the specified domain. This file
+  must contain the nostr public key for the specified user. Read more specifics
+  in the
   <a href="https://github.com/nostr-protocol/nips/blob/master/05.md"
     >NIP-05 spec</a
-  >, nostr clients will look for a <code>/.well-known/nostr.json</code> file at
-  the root of the specified domain. This file must contain the nostr public key
-  for the specified user.
+  >.
 </p>
 
 <h2>How to set up a NIP-05 identifier</h2>
 
-<h3>Option 1: Host a nostr.json file on your own domain</h3>
+<h4>Option 1: Host a nostr.json file on your own domain</h4>
 <p>
-  If you already own a domain/website this is a good free option. You can add a
+  If you already own a domain/website this is a free option. You can add a
   .well-known/nostr.json file with your public key in a JSON object of the
   format
   <code>{ "names": { "NOSTR_NAME": "NOSTR_PUBKEY" }</code>. Make sure to serve
@@ -49,7 +54,7 @@ permalink: /guides/nip05
   <code>*</code>.
 </p>
 
-<h3>Option 1: Use an existing NIP-05 service</h3>
+<h4>Option 2: Use an existing NIP-05 service</h4>
 <p>
   If you don't want to set up your own nostr.json, you can take advantage of a
   NIP-05 service, such as <a href="https://nostrplebs.com/">nostrplebs.com</a>.
